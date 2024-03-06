@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cace11f2022e3ab46bb2b7b4c638b56e
+guid: f6f96957814832c44857d01e545f266a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Grass
-    second: {fileID: 2100000, guid: 7e8c75a38ae14b849b74087957b87707, type: 2}
+      name: StoneSpireMat
+    second: {fileID: 2100000, guid: f540c45a760a63f47a513ec99ebce09f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -52,7 +52,7 @@ ModelImporter:
     importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
-    swapUVChannels: 0
+    swapUVChannels: 1
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0

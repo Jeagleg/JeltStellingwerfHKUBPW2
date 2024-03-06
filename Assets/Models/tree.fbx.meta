@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cace11f2022e3ab46bb2b7b4c638b56e
+guid: e253542b83f6e364189b60da1b4f0431
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Grass
-    second: {fileID: 2100000, guid: 7e8c75a38ae14b849b74087957b87707, type: 2}
+      name: TreeBark
+    second: {fileID: 2100000, guid: 361820d478c068c4db5ea7da30a6b206, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeLeavesDomeMat
+    second: {fileID: 2100000, guid: 2246f367a3866a4488abbf29e8d821f5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
