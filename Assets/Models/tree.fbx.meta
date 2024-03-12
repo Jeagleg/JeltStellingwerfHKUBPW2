@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e253542b83f6e364189b60da1b4f0431
+guid: aa19bc5edbc55cd4898ca21aff5d13af
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -9,11 +9,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: TreeBark
     second: {fileID: 2100000, guid: 361820d478c068c4db5ea7da30a6b206, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: TreeLeavesDomeMat
-    second: {fileID: 2100000, guid: 2246f367a3866a4488abbf29e8d821f5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
