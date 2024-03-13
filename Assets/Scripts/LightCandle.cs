@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.VFX;
 
 public class LightCandle : MonoBehaviour
 {
 
     public InteractionManager imc;
     public TextMeshProUGUI LightCandleUIText;
+    int CandleLit = 0;
+    [SerializeField] VisualEffect lightCandle;
+    public GameObject candleLight;
 
     void Start()
     {
-       LightCandleUIText.gameObject.SetActive(false); 
+       LightCandleUIText.gameObject.SetActive(false);
+       candleLight.SetActive(false);
     }
 
     void Update()
@@ -23,15 +28,20 @@ public class LightCandle : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            if(CandleLit == 0)
+            {
             print("Player Detected");
             LightCandleUIText.gameObject.SetActive(true); 
-            if (Input.GetKey(KeyCode.E))
-            {
+                if (Input.GetKey(KeyCode.E))
+                {
                 print("Pressed E");
-                Destroy(this.gameObject);
+                CandleLit++;
                 LightCandleUIText.gameObject.SetActive(false); 
                 imc.litCandles++;
-            }
+                lightCandle.Play();
+                candleLight.SetActive(true);
+                }
+            }    
         }
     }
     

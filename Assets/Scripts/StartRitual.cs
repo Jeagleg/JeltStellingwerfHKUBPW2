@@ -8,6 +8,7 @@ public class StartRitual : MonoBehaviour
 
     public InteractionManager imr;
     public TextMeshProUGUI StartRitualUIText; 
+    int ritualStarted = 0;
 
     void Start()
     {
@@ -23,23 +24,26 @@ public class StartRitual : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            print("Player In Circle");
-            StartRitualUIText.gameObject.SetActive(true); 
-            if (Input.GetKey(KeyCode.E))
+            if(ritualStarted == 0)
             {
-                print("Pressed E");            
+                print("Player In Circle");
                 if (imr.litCandles == 5) 
                 {
+                    StartRitualUIText.gameObject.SetActive(true);
+                    if (Input.GetKey(KeyCode.E))
+                    {
                     print("Ritual Starts");
                     StartRitualUIText.gameObject.SetActive(false);
-                } 
+                    ritualStarted++;
+                    }
+                }
             }
         }
-    }
-    
-    void OnTriggerExit(Collider other)
-    {       
+
+        void OnTriggerExit(Collider other)
+        {       
         StartRitualUIText.gameObject.SetActive(false);       
+        }
     }
 }
 
