@@ -9,6 +9,7 @@ public class StartRitual : MonoBehaviour
     public InteractionManager imr;
     public TextMeshProUGUI StartRitualUIText; 
     int ritualStarted = 0;
+    [SerializeField] private Animator waterColorTransition;
 
     void Start()
     {
@@ -24,17 +25,18 @@ public class StartRitual : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+        print("Player In Circle");
             if(ritualStarted == 0)
             {
-                print("Player In Circle");
                 if (imr.litCandles == 5) 
                 {
-                    StartRitualUIText.gameObject.SetActive(true);
+                StartRitualUIText.gameObject.SetActive(true);
                     if (Input.GetKey(KeyCode.E))
                     {
                     print("Ritual Starts");
                     StartRitualUIText.gameObject.SetActive(false);
                     ritualStarted++;
+                    waterColorTransition.SetBool("waterColorChange", true);
                     }
                 }
             }
@@ -42,7 +44,7 @@ public class StartRitual : MonoBehaviour
 
         void OnTriggerExit(Collider other)
         {       
-        StartRitualUIText.gameObject.SetActive(false);       
+            StartRitualUIText.gameObject.SetActive(false);       
         }
     }
 }

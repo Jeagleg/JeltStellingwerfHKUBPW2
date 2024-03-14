@@ -18,7 +18,7 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.91
+    m_Value: 0
   intensity:
     m_OverrideState: 1
     m_Value: 0.21
@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Value: 0.84
   clamp:
     m_OverrideState: 0
-    m_Value: 65472
+    m_Value: 65460.02
   tint:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -75,6 +75,28 @@ MonoBehaviour:
   rounded:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-3385917687346328866
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0.0000000042178816}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0.04395622}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0.19780259}
 --- !u!114 &-1695077842662760473
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -90,13 +112,13 @@ MonoBehaviour:
   active: 1
   type:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: 3
   intensity:
     m_OverrideState: 1
-    m_Value: 0.42
+    m_Value: 0.35
   response:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.35
   texture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -119,6 +141,8 @@ MonoBehaviour:
   - {fileID: -5247710114716872583}
   - {fileID: 3127097906712823954}
   - {fileID: 8605313569127436151}
+  - {fileID: -3385917687346328866}
+  - {fileID: 3006632166769171011}
 --- !u!114 &2886562367987126494
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -159,6 +183,22 @@ MonoBehaviour:
   maxNits:
     m_OverrideState: 0
     m_Value: 1000
+--- !u!114 &3006632166769171011
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.21
 --- !u!114 &3127097906712823954
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -174,10 +214,10 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0.14
+    m_Value: 0.21
   contrast:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: -14
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -186,7 +226,7 @@ MonoBehaviour:
     m_Value: 3
   saturation:
     m_OverrideState: 1
-    m_Value: 7
+    m_Value: 35
 --- !u!114 &8605313569127436151
 MonoBehaviour:
   m_ObjectHideFlags: 3
