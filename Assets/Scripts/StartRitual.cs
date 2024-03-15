@@ -10,7 +10,9 @@ public class StartRitual : MonoBehaviour
     public TextMeshProUGUI StartRitualUIText; 
     int ritualStarted = 0;
     [SerializeField] private Animator waterColorTransition;
-
+    [SerializeField] private Animator cameraBlackAndWhiteTransition;
+    [SerializeField] private Animator sunColorTransition;
+    
     void Start()
     {
        StartRitualUIText.gameObject.SetActive(false);        
@@ -37,6 +39,8 @@ public class StartRitual : MonoBehaviour
                     StartRitualUIText.gameObject.SetActive(false);
                     ritualStarted++;
                     waterColorTransition.SetBool("waterColorChange", true);
+                    cameraBlackAndWhiteTransition.SetBool("cameraColorChange", true);
+                    sunColorTransition.SetBool("sunColorChange", true);
                     }
                 }
             }
