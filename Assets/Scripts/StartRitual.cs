@@ -13,6 +13,8 @@ public class StartRitual : MonoBehaviour
     //[SerializeField] private Animator cameraBlackAndWhiteTransition;
     [SerializeField] private Animator sunColorTransition;
     [SerializeField] private Animator postEffectTranstion;
+    [SerializeField] private Animator whitePaintingsTransition;
+    [SerializeField] private Animator redPaintingsTransition;
 
     void Start()
     {
@@ -43,6 +45,8 @@ public class StartRitual : MonoBehaviour
                     //cameraBlackAndWhiteTransition.SetBool("cameraColorChange", true);
                     sunColorTransition.SetBool("sunColorChange", true);
                     postEffectTranstion.SetBool("postEffectChange", true);
+                    whitePaintingsTransition.SetBool("whitePaintingsOpacityChange", true);
+                    redPaintingsTransition.SetBool("redPaintingsOpacityChange", true);
                     }
                 }
             }
