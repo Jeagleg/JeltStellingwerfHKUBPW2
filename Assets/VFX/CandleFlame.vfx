@@ -17,7 +17,7 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 701
+    x: 700
     y: -190
     width: 666
     height: 1778
@@ -1808,7 +1808,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 1
+  m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
   m_OutputSlots:
@@ -1834,7 +1834,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661614879}
       inputSlot: {fileID: 8926484042661614797}
-    position: {x: 700.8, y: 1326.4}
+    position: {x: 700, y: 1326.4}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661614879

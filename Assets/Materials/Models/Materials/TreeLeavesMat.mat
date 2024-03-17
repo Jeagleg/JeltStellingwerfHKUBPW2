@@ -21,14 +21,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TreeLeavesMat
-  m_Shader: {fileID: -6465566751694194690, guid: 6ed92ca11ff639a41ad5cdb8bb7749f5, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: bf3d888d235176243be79d627bc86c0d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_InvalidKeywords:
+  - _ALPHATEST_ON
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 1
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
@@ -36,6 +37,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlbedoTexture:
+        m_Texture: {fileID: 2800000, guid: 652a0bd13ea042047a170b44cecb82b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -58,6 +63,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LeafTexture:
+        m_Texture: {fileID: 2800000, guid: e2922bde778f5e74cb189af553577999, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeavesTexture:
@@ -113,6 +122,9 @@ Material:
     - _AlphaClip: 1
     - _AlphaCutOff: 0.5
     - _AlphaToMask: 1
+    - _Ambient: 0.63
+    - _AmbientOcclusion: 1
+    - _Billboard_Size: 0.01
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BlendOp: 0
@@ -136,16 +148,22 @@ Material:
     - _EnvironmentReflections: 1
     - _FlipbookBlending: 0
     - _FlipbookMode: 0
+    - _FresnelStrength: 0.35
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Inflate: 0.001
     - _Metallic: 0
     - _Mode: 0
+    - _NoiseAmount: 0.28
+    - _NoiseSpeed: 0.14
     - _OcclusionStrength: 1
+    - _Opacity: 1
     - _Parallax: 0.005
-    - _QueueControl: 0
+    - _QueueControl: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Saturation: 1
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 0
@@ -158,11 +176,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.6282591, g: 0.7584905, b: 0.64160204, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 0.121568635, g: 0.20784315, b: 0.14117648, a: 0}
     - _LeavesColor: {r: 0.22926515, g: 0.6301887, b: 0.17478818, a: 0}
     - _LeavesOffset: {r: 0.25, g: 0.25, b: 0, a: 0}
     - _LeavesSize: {r: 0.5, g: 0.5, b: 0, a: 0}
