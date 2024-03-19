@@ -42,6 +42,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: NoPost
-    uniqueID: 3076855035
-    locked: 0

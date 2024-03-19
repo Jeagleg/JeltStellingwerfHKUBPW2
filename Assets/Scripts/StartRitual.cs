@@ -9,12 +9,14 @@ public class StartRitual : MonoBehaviour
     public InteractionManager imr;
     public TextMeshProUGUI StartRitualUIText; 
     int ritualStarted = 0;
+
     [SerializeField] private Animator waterColorTransition;
     //[SerializeField] private Animator cameraBlackAndWhiteTransition;
     [SerializeField] private Animator sunColorTransition;
-    [SerializeField] private Animator postEffectTranstion;
-    [SerializeField] private Animator whitePaintingsTransition;
-    [SerializeField] private Animator redPaintingsTransition;
+    [SerializeField] private Animator postEffectTransition;
+    //[SerializeField] private Animator whitePaintingsTransition;
+    //[SerializeField] private Animator redPaintingsTransition;
+    [SerializeField] private Animator paintingsPlaneTransition;    
 
     void Start()
     {
@@ -44,9 +46,10 @@ public class StartRitual : MonoBehaviour
                     waterColorTransition.SetBool("waterColorChange", true);
                     //cameraBlackAndWhiteTransition.SetBool("cameraColorChange", true);
                     sunColorTransition.SetBool("sunColorChange", true);
-                    postEffectTranstion.SetBool("postEffectChange", true);
-                    whitePaintingsTransition.SetBool("whitePaintingsOpacityChange", true);
-                    redPaintingsTransition.SetBool("redPaintingsOpacityChange", true);
+                    postEffectTransition.SetBool("postEffectChange", true);
+                    //whitePaintingsTransition.SetBool("whitePaintingsOpacityChange", true);
+                    //redPaintingsTransition.SetBool("redPaintingsOpacityChange", true);
+                    paintingsPlaneTransition.SetBool("planePositionChange", true);
                     }
                 }
             }
