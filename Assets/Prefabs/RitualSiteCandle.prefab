@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 4246597547359863243}
   - component: {fileID: 3550043882403930245}
   m_Layer: 0
-  m_Name: candle
+  m_Name: RitualSiteCandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
