@@ -67,6 +67,14 @@ Material:
         m_Texture: {fileID: 8400000, guid: 9e60180a4a1057149828ec5efe06de0a, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_e49564b7df0449d5b1f18ebeb72ac35b_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 9c1b4b2255f2f6c44a6da633e2868280, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_f400c0f331f6497c81c81ba4f4c583b5_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 242bc45c108153d498d83ad1661d2c7b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -108,6 +116,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _NormalStrength: 0.014
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -135,10 +144,14 @@ Material:
     - _DeepWater: {r: 0.19215687, g: 0.29803923, b: 0.28409585, a: 0.14117648}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 0.7864235, g: 0.7897843, b: 0.857, a: 0}
+    - _FoamTiling: {r: 0.03, g: 0.03, b: 0, a: 0}
     - _ShallowWater: {r: 0.3647059, g: 0.6392488, b: 0.7058824, a: 0.2784314}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Test: {r: 1, g: 1, b: 1, a: 1}
+    - _Tiling: {r: 0.14, g: 0.14, b: 0, a: 0}
+    - _Tiling2: {r: 1, g: 1, b: 0, a: 0}
     - _WaterEdgeColor: {r: 1, g: 1, b: 1, a: 0}
+    - _WaterTiling: {r: 2.1, g: 2.1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1301295507589397509
 MonoBehaviour:
