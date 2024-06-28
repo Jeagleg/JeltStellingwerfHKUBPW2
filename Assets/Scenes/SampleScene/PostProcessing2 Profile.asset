@@ -164,7 +164,7 @@ MonoBehaviour:
   active: 1
   type:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 10
   intensity:
     m_OverrideState: 1
     m_Value: 0.42
@@ -172,8 +172,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   texture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 9d3051791c7ecf142adaf809a93a7a0f, type: 3}
 --- !u!114 &1610083110330023204
 MonoBehaviour:
   m_ObjectHideFlags: 3
