@@ -13,6 +13,9 @@ public class LightCandle : MonoBehaviour
     [SerializeField] VisualEffect lightCandle;
     public GameObject candleLight;
 
+    public AudioSource lightCandleSource;
+    public AudioClip lightCandleClip;
+
     void Start()
     {
        LightCandleUIText.gameObject.SetActive(false);
@@ -35,6 +38,7 @@ public class LightCandle : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                 print("Pressed E");
+                lightCandleSource.PlayOneShot(lightCandleClip);
                 CandleLit++;
                 LightCandleUIText.gameObject.SetActive(false); 
                 imc.litCandles++;
