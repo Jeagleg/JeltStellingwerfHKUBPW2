@@ -15,9 +15,15 @@ public class StartRitual : MonoBehaviour
     [SerializeField] private Animator postEffectTransition;
     [SerializeField] private Animator paintingsPlaneTransition;    
 
+    public AudioSource demonicWhisperingSource;
+    public AudioClip demonicWhisperingClip;
+
+    public GameObject whisperingLoopPlayer;
+
     void Start()
     {
-       StartRitualUIText.gameObject.SetActive(false);        
+       StartRitualUIText.gameObject.SetActive(false);
+       whisperingLoopPlayer.SetActive(false);        
     }
 
     void Update()
@@ -38,12 +44,14 @@ public class StartRitual : MonoBehaviour
                     if (Input.GetKey(KeyCode.E))
                     {
                     print("Ritual Starts");
+                    demonicWhisperingSource.PlayOneShot(demonicWhisperingClip);
                     StartRitualUIText.gameObject.SetActive(false);
                     ritualStarted++;
                     waterColorTransition.SetBool("waterColorChange", true);
                     sunColorTransition.SetBool("sunColorChange", true);
                     postEffectTransition.SetBool("postEffectChange", true);
                     paintingsPlaneTransition.SetBool("planePositionChange", true);
+                    StartCoroutine(EnableWhisperingLoop());
                     }
                 }
             }
@@ -54,5 +62,12 @@ public class StartRitual : MonoBehaviour
             StartRitualUIText.gameObject.SetActive(false);       
         }
     }
+
+    IEnumerator EnableWhisperingLoop()
+    {
+        yield return new WaitForSeconds(8);
+        whisperingLoopPlayer.SetActive(true);
+    } 
+
 }
 
