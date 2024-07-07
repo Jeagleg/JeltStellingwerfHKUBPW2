@@ -56,18 +56,17 @@ public class StartRitual : MonoBehaviour
                 }
             }
         }
-
-        void OnTriggerExit(Collider other)
-        {       
-            StartRitualUIText.gameObject.SetActive(false);       
-        }
     }
-
+        
+    void OnTriggerExit(Collider other)
+    {       
+        StartRitualUIText.gameObject.SetActive(false);       
+    }
+    
     IEnumerator EnableWhisperingLoop()
     {
         yield return new WaitForSeconds(8);
         whisperingLoopPlayer.SetActive(true);
     } 
-
 }
 
